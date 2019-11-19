@@ -1,0 +1,27 @@
+function(hscode_description)
+    a = tokenize hscode description and slice into three layers
+    a = remove stopwords
+    a = processing for 'other'
+    a = delete repeat words and assign weight
+    a = processing for no sharing word between layers and one word case in one layer
+    in one layer:
+        two vertexes form on edge and assign weight to edge
+        delete repeat edge and assign weight
+    get initial matrix
+    get degree1 matrix
+    get degree2 matrix
+    return degree2 matrix
+test = hscode description
+candidates = candidates of hscode description
+for i in candidates:
+    test_matrix = function(test)
+    candidate_matrix = function(i)
+    get similarity from two degree2 matrix
+candidats = sort candidates by their similarity
+for i in candidates:
+    if i is true candidate:
+        get alpha score depending on i's order
+get lots of test alpha score
+get average alpha score
+
+

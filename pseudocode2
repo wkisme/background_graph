@@ -1,0 +1,13 @@
+The alpha_score calculating is described as in Algorithm-1
+Algorithm-1: alpha_score(D), the input D = {d i | i = 1, 2,...,k } is a set of hscode description.d i is a three layers hscode description.
+d i(i > 1) is the candidates of d 1.
+1. for each hscode description d i,i = 2, ..., k:
+    2. Construct the article’s subgraph G j for d i by Definition 3.2
+    3. Combine subgraph to a Background Graph by Definition 3.4
+    4. Compute similarity comparing to d 1's Background Graph by Definition 3.5
+5. sort list1 = {d i | i = 2,...,k } depends on d i 's similarity comparing to d 1's Background Graph
+6. counter = 0; w = 1/len(list1)
+7. for d i in list1:
+8.    if d i is the true candidate:
+9.         return 1-counter*w
+10.   counter += 1
